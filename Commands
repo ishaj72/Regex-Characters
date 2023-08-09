@@ -6,7 +6,8 @@ Different symbols used in regex =>
 [pqr] -> a single character that can either be 'p' , 'q' or 'r'
 [a-d] -> Single character that falls between a to d
 [^pq] -> A single character that can neither be p or q
-^ -> This is an represents begining of new line
+^ -> The symbol represents begining of new line
+^ -> Also used as negation symbol iff it is inside square bracket
 $ -> This is an anchor that represents the end of line 
 \ -> It is considered whatever letter immediately follows the backlash as literal(in cases where literal followed is a symbols that can be used as special symbols also)
 
@@ -14,3 +15,7 @@ Combination symbols used =>
 .* -> Zero or more occurances of any letter
 \s * -> 0 or more occurances of whitespace
 [p-sa] -> All letters  including 'p' to 's' and 'a'
+
+If the special symbols need to be used as literals =>
+ [.] -> If the period symbol is to be used inside brackets it does not need '\' as this does not mean anything special inside brackets.
+ [\^] or [\\] -> For the symbols ^ or \ symbols we need '\' to be used as they are used as special symbols inside brackets
