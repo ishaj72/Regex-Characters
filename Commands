@@ -1,4 +1,4 @@
-#Different symbols used in regex =>
+Different symbols used in regex =>
 
 * -> zero or more occurances of a letter
 . -> a wildcard that represents any character
@@ -10,7 +10,7 @@
 $ -> This is an anchor that represents the end of line 
 \ -> It is considered whatever letter immediately follows the backlash as literal(in cases where literal followed is a symbols that can be used as special symbols also)
 
-#Combination symbols used =>
+Combination symbols used =>
 .* -> Zero or more occurances of any letter
 \s * -> 0 or more occurances of whitespace
 [p-sa] -> All letters  including 'p' to 's' and 'a'
