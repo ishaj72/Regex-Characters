@@ -1,0 +1,16 @@
+#Different symbols used in regex =>
+
+* -> zero or more occurances of a letter
+. -> a wildcard that represents any character
+\s -> represents whitespace
+[pqr] -> a single character that can either be 'p' , 'q' or 'r'
+[a-d] -> Single character that falls between a to d
+[^pq] -> A single character that can neither be p or q
+^ -> This is an represents begining of new line
+$ -> This is an anchor that represents the end of line 
+\ -> It is considered whatever letter immediately follows the backlash as literal(in cases where literal followed is a symbols that can be used as special symbols also)
+
+#Combination symbols used =>
+.* -> Zero or more occurances of any letter
+\s * -> 0 or more occurances of whitespace
+[p-sa] -> All letters  including 'p' to 's' and 'a'
