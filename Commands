@@ -10,6 +10,12 @@ Different symbols used in regex =>
 ^ -> Also used as negation symbol iff it is inside square bracket
 $ -> This is an anchor that represents the end of line 
 \ -> It is considered whatever letter immediately follows the backlash as literal(in cases where literal followed is a symbols that can be used as special symbols also)
++ -> one or more occurances of character that proceeds symbol
+? -> zero or occurances of char that proceeds ?
+pattern1|pattern2 -> matches either pattern1 or pattern 2
+() -> divides into groups
+{m} -> exactly 'm' occurances of whatever proceeds
+{m,n} -> at least m and atmost occurances of whatever proceeds. Only one of m,n is mandatory. Other can be left blank.
 
 Combination symbols used =>
 .* -> Zero or more occurances of any letter
