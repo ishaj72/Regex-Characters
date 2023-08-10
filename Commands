@@ -1,5 +1,4 @@
 Different symbols used in regex =>
-
 * -> zero or more occurances of a letter.
 . -> a wildcard that represents any character.
 \s -> represents whitespace.
@@ -30,3 +29,10 @@ If the special symbols need to be used as literals =>
 
 -E symbol -> This is required if you are using any symbol from POSIX extended set in regex.
 POSIX -> Portable operation System Interface (based on UNIX OS).
+
+GREP AND SED => 
+The commands can be written using 'grep' keyword with or without -E symbol.
+example-> grep 'your pattern in single quotes' file_name
+
+Other method that can be used is using 'sed' keyword with -r symbol(mostly used for finding a nd replacing pattern).
+example -> sed -r 's/pattern/replacment/g' file_name
