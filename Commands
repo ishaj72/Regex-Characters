@@ -1,27 +1,32 @@
 Different symbols used in regex =>
 
-* -> zero or more occurances of a letter
-. -> a wildcard that represents any character
-\s -> represents whitespace
-[pqr] -> a single character that can either be 'p' , 'q' or 'r'
-[a-d] -> Single character that falls between a to d
-[^pq] -> A single character that can neither be p or q
-^ -> The symbol represents begining of new line
-^ -> Also used as negation symbol iff it is inside square bracket
-$ -> This is an anchor that represents the end of line 
-\ -> It is considered whatever letter immediately follows the backlash as literal(in cases where literal followed is a symbols that can be used as special symbols also)
-+ -> one or more occurances of character that proceeds symbol
-? -> zero or occurances of char that proceeds ?
-pattern1|pattern2 -> matches either pattern1 or pattern 2
-() -> divides into groups
-{m} -> exactly 'm' occurances of whatever proceeds
-{m,n} -> at least m and atmost occurances of whatever proceeds. Only one of m,n is mandatory. Other can be left blank.
+* -> zero or more occurances of a letter.
+. -> a wildcard that represents any character.
+\s -> represents whitespace.
+[pqr] -> a single character that can either be 'p' , 'q' or 'r'.
+[a-d] -> Single character that falls between a to d.
+[^pq] -> A single character that can neither be p or q.
+^ -> The symbol represents begining of new line.
+^ -> Also used as negation symbol iff it is inside square bracket.
+$ -> This is an anchor that represents the end of line.
+\ -> It is considered whatever letter immediately follows the backlash as literal(in cases where literal followed is a symbols that can be used as special symbols also).
++ -> one or more occurances of character that proceeds symbol.
+? -> zero or occurances of char that proceeds ?.
+(pattern1|pattern2) -> matches either pattern1 or pattern 2.
+() -> divides into groups.
+{m} -> exactly 'm' occurances of whatever proceeds.
+{m,n} -> at least m and atmost occurances of whatever proceeds. 
+(m,} or {,n} -> Only one of m,n is mandatory. Other can be left blank.
 
 Combination symbols used =>
-.* -> Zero or more occurances of any letter
-\s * -> 0 or more occurances of whitespace
-[p-sa] -> All letters  including 'p' to 's' and 'a'
+.* -> Zero or more occurances of any letter.
+\s * -> 0 or more occurances of whitespace.
+[p-sa] -> All letters  including 'p' to 's' and 'a'.
+^a$ -> The string will start and end at 'a'.
 
 If the special symbols need to be used as literals =>
  [.] -> If the period symbol is to be used inside brackets it does not need '\' as this does not mean anything special inside brackets.
- [\^] or [\\] -> For the symbols ^ or \ symbols we need '\' to be used as they are used as special symbols inside brackets
+ [\^] or [\\] -> For the symbols ^ or \ symbols we need '\' to be used as they are used as special symbols inside brackets.
+
+-E symbol -> This is required if you are using any symbol from POSIX extended set in regex.
+POSIX -> Portable operation System Interface (based on UNIX OS).
