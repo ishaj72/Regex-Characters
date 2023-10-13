@@ -22,6 +22,11 @@ Combination symbols used =>
 \s * -> 0 or more occurances of whitespace.
 [p-sa] -> All letters  including 'p' to 's' and 'a'.
 ^a$ -> The string will start and end at 'a'.
+\b -> It is used to determine the word boundry anchor. 
+{ \bcar\b ->this will determine word in sentence "I have a car" but not in sentence "Lets Carpool".
+^\bcar\b -> determine the car word at th starting of sentence like "Car is so unique."
+\bworld\b$ -> determine the world word at the end of sentence like "Hello World".
+.}
 
 If the special symbols need to be used as literals =>
  [.] -> If the period symbol is to be used inside brackets it does not need '\' as this does not mean anything special inside brackets.
