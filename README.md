@@ -1,2 +1,4 @@
-# Regex Commands
-The file contains basic and combination regex commands with the desciption of the function they perform.
+#Regex 
+Regex(regular Expression) is text-matching pattern for text manipulating , editing , searching. Regular expressions are a sequence of characters that define a search pattern. 
+## Regex Sheet
+The file contains a collection of basic regular expressions for a quick reference.<br/>
