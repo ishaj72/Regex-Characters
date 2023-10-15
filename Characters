@@ -16,6 +16,7 @@ $ -> This is an anchor that represents the end of line.
 {m} -> exactly 'm' occurances of whatever proceeds.
 {m,n} -> at least m and atmost occurances of whatever proceeds. 
 (m,} or {,n} -> Only one of m,n is mandatory. Other can be left blank.
+| -> it is used to anyone betwen the two options. 
 
 Combination symbols used =>
 .* -> Zero or more occurances of any letter.
@@ -33,11 +34,13 @@ If the special symbols need to be used as literals =>
  [\^] or [\\] -> For the symbols ^ or \ symbols we need '\' to be used as they are used as special symbols inside brackets.
 
 -E symbol -> This is required if you are using any symbol from POSIX extended set in regex.
+-r symbol -> Enables the posix extended set.
 POSIX -> Portable operation System Interface (based on UNIX OS).
 
 GREP AND SED => 
 The commands can be written using 'grep' keyword with or without -E symbol.
 example-> grep 'your pattern in single quotes' file_name
+          grep -E 'your pattern in single quotes' file_name
 
 Other method that can be used is using 'sed' keyword with -r symbol(mostly used for finding a nd replacing pattern).
 example -> sed -r 's/pattern/replacment/g' file_name
