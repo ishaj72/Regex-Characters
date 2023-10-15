@@ -28,6 +28,7 @@ Combination symbols used =>
 ^\bcar\b -> determine the car word at th starting of sentence like "Car is so unique."
 \bworld\b$ -> determine the world word at the end of sentence like "Hello World".
 .}
+(ply|log)wood -> this regex will give either plywood or logwood.
 
 If the special symbols need to be used as literals =>
  [.] -> If the period symbol is to be used inside brackets it does not need '\' as this does not mean anything special inside brackets.
