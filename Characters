@@ -48,3 +48,9 @@ example-> grep 'your pattern in single quotes' file_name
 
 Other method that can be used is using 'sed' keyword with -r symbol(mostly used for finding a nd replacing pattern).
 example -> sed -r 's/pattern/replacment/g' file_name
+
+FUNCTIONS IN REGEX =>
+findall -> returns a list of all containing matches
+search -> finds the element present in the list
+split -> splits the string on the basis of the character passed in the parameter
+sub -> substitutes the character present with the other character
