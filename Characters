@@ -28,6 +28,9 @@ Combination symbols used =>
 ^\bcar\b -> determine the car word at th starting of sentence like "Car is so unique."
 \bworld\b$ -> determine the world word at the end of sentence like "Hello World".
 .}
+\B ->Return a match where the specified character are present but not at the beginning.
+\d->Returns a match where string contains digit
+\W->Returns a match at every NON word character (character NOT between a and z.Like "!" ,"?" , whitespace etc.)
 (ply|log)wood -> this regex will give either plywood or logwood.
 
 If the special symbols need to be used as literals =>
